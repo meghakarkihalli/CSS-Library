@@ -1,0 +1,36 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 640px;
+    width: 100%;
+}
+.content {
+    display: flex;
+    flex: 1;
+}
+.top-menu {
+    border: 1px solid;
+}
+.side-menu {
+    border-right: 1px solid;
+    width: 160px;
+}
+.main {
+    flex: 1;
+    padding: 16px;
+}
+.side-nav-bar {
+    &__icon-container {
+      display: flex;
+    }
+    &__logo-text {
+      color: #D4D7DC;
+      margin-top: 8px;
+      font-weight: 700;
+      font-size: 22px;
+    }
+    &__logo {
+        height: 44px;
+        width: 44px;
+    }
+  }
