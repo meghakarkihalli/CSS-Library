@@ -1,0 +1,19 @@
+.top-menu-bar {
+  &__container {
+    float: right;
+    padding: 8px 20px;
+  }
+  &__button {
+    border: none;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    background-color: white;
+    font-weight: 700;
+    color: #6B6C72;
+  }
+  &__text {
+    margin-left: 8px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,23 @@
+.side-nav-bar {
+  &__container {
+    width: 218px;
+    height: 100vh;
+    background-color: #393A3D;
+    position: fixed;
+  }
+  &__icon-container {
+    display: flex;
+    margin-left: 16px;
+  }
+  &__logo-text {
+    color: #D4D7DC;
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  &__logo {
+      height: 44px;
+      width: 44px;
+  }
+  
+}
