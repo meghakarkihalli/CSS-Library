@@ -3,7 +3,6 @@ import SideNavBar from "./side-nav-bar";
 import TopMenuBar from "./top-menu-bar";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import AccordionPage from "./route-pages/accordion";
-import Image from "./logo.png";
 
 import "./_style.scss";
 
@@ -19,24 +18,10 @@ function App() {
         <div className="content">
           <div className="side-menu">
             <div className={`${blk}__container`}>
-              <div className={`${blk}__icon-container`}>
-                <img src={Image} className={`${blk}__logo `} />
-                <span className={`${blk}__logo-text`}>CSS Library</span>
-              </div>
-              <div>
-                <nav>
-                  <ul>
-                    <li>
-                      <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                      <Link to="/about">About</Link>
-                    </li>
-                    <li>
-                      <Link to="/users">Users</Link>
-                    </li>
-                  </ul>
-                </nav>
+              <div className={`${blk}__list`}>
+                <Link className={`${blk}__list-item`} to="/accordion">Accordion</Link>
+                <Link className={`${blk}__list-item`} to="/about">About</Link>
+                <Link className={`${blk}__list-item`} to="/users">Users</Link>
               </div>
             </div>
           </div>

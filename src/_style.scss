@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
 .App {
     display: flex;
     flex-direction: column;
-    min-height: 640px;
+    min-height: 840px;
     width: 100%;
 }
 .content {
@@ -9,28 +16,32 @@
     flex: 1;
 }
 .top-menu {
-    border: 1px solid;
+  background-color: #f8f8f8;
+  height: 60px;
 }
 .side-menu {
-    border-right: 1px solid;
-    width: 160px;
+    width: 240px;
+    background-color: #37474F;
 }
 .main {
     flex: 1;
     padding: 16px;
 }
 .side-nav-bar {
-    &__icon-container {
-      display: flex;
+    &__list {
+      padding: 8px 0;
     }
-    &__logo-text {
-      color: #D4D7DC;
-      margin-top: 8px;
-      font-weight: 700;
-      font-size: 22px;
-    }
-    &__logo {
-        height: 44px;
-        width: 44px;
+    &__list-item {
+      padding: 16px;
+      text-decoration: none;
+      text-align: left;
+      display: block;
+      color: #CFD8DC;
+      font-size: 16px;
+      border-bottom: 0.5px solid #CFD8DC;
+      &:hover {
+        color: white;
+        border-bottom: 0.2px solid white;
+      }
     }
   }

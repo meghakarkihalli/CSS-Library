@@ -1,19 +1,11 @@
 .top-menu-bar {
-  &__container1 {
-    position: fixed;
-    top: 0;
-    margin-left: 160px;
-    border: 1px solid;
-    padding: 0 8px;
-    display: flex;
-    flex-direction: row-reverse;
-  }
+  
   &__button {
     border: none;
-    height: 40px;
+    height: 60px;
     width: 100px;
     cursor: pointer;
-    background-color: white;
+    background-color:rgba(0,0,0,0);
     font-weight: 700;
     color: #6B6C72;
     float: right;
@@ -21,5 +13,19 @@
   &__text {
     margin-left: 8px;
     font-size: 16px;
+  }
+  &__icon-container {
+    display: flex;
+  }
+  &__logo-text {
+    color: #008FC5;
+    line-height: 60px;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  &__logo {
+    height: 44px;
+    width: 36px;
+    padding: 8px 16px;
   }
 }
