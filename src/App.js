@@ -1,14 +1,18 @@
-import React from "react";
-import SideNavBar from "./side-nav-bar";
-import TopMenuBar from "./top-menu-bar";
+import React, { lazy } from "react"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import AccordionPage from "./route-pages/accordion";
 
+//components
+import TopMenuBar from "./top-menu-bar";
+import AccordionPage from "./route-pages/accordion"
+
+//styles
 import "./_style.scss";
 
 const blk = "side-nav-bar";
 
+
 function App() {
+  console.log('public url: ', process.env.PUBLIC_URL)
   return (
     <Router>
       <div className="App">
