@@ -24,8 +24,6 @@ function App() {
             <div className={`${blk}__container`}>
               <div className={`${blk}__list`}>
                 <Link className={`${blk}__list-item`} to="/accordion">Accordion</Link>
-                <Link className={`${blk}__list-item`} to="/about">About</Link>
-                <Link className={`${blk}__list-item`} to="/users">Users</Link>
               </div>
             </div>
           </div>

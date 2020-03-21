@@ -8,7 +8,6 @@
   &__header {
     height: 48px;
     background-color: $gray-lightest;
-    padding: 0 16px;
     display: flex;
     border: 0.5px solid $gray;
     overflow: hidden;
@@ -16,6 +15,7 @@
     border-top-right-radius: 4px;
 
     &--title {
+      margin: 0 16px;
       line-height: 48px;
       color: $black;
       width: 70%;
@@ -27,12 +27,25 @@
       width: 30%;
       text-align: right;
       line-height: 48px;
+      padding-right: 16px;
     }
 
     &--sign {
       text-decoration: none;
       font-size: 20px;
       font-weight: 700;
+    }
+  }
+
+  &__header-button {
+    width: 100%;
+    border: none;
+    text-align: left;
+    &:hover {
+      background-color: $gray;
+    }
+    &:focus {
+      outline: 0;
     }
   }
 
@@ -57,10 +70,4 @@
       transform:scaleY(0);
     }
   }
-
-  // &__body {
-  //   padding: 16px;
-  //   
-  // }
-
 }
